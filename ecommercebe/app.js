@@ -16,7 +16,7 @@ const stripe = require("stripe")(process.env.STRIPE_SKEY);
 const initRoutes = require("./routes/web");
 // Cho phép lý dữ liệu từ form method POST
 app.use(express.urlencoded({ extended: true }));
-
+console.log("abc")
 // Khởi tạo các routes cho ứng dụng
 initRoutes(app);
 app.set("view engine", "ejs");
